@@ -1,0 +1,14 @@
+---
+integration: 
+  name: minitest
+
+includes:
+  - test
+requires:
+  - ./config/environment
+mutation:
+  operators: full
+  timeout: 10.0
+matcher:
+  subjects: 
+  - HomeController

@@ -95,6 +95,11 @@ GIT
       zeitwerk (~> 2.6)
 
 GEM
+  remote: https://oss:d9teyzZr0ggvzbc3qJZJtjFWGJ4af3rQ@gem.mutant.dev/
+  specs:
+    mutant-license (0.1.1.2.2303272970065013542030572729180478393774.0)
+
+GEM
   remote: https://rubygems.org/
   specs:
     addressable (2.8.6)
@@ -124,6 +129,7 @@ GEM
     debug (1.9.1)
       irb (~> 1.10)
       reline (>= 0.3.8)
+    diff-lcs (1.5.1)
     drb (2.2.0)
       ruby2_keywords
     erubi (1.12.0)
@@ -157,6 +163,15 @@ GEM
     mini_mime (1.1.5)
     minitest (5.21.2)
     msgpack (1.7.2)
+    mutant (0.11.28)
+      diff-lcs (~> 1.3)
+      parser (~> 3.3.0)
+      regexp_parser (~> 2.8.2)
+      sorbet-runtime (~> 0.5.0)
+      unparser (~> 0.6.9)
+    mutant-minitest (0.11.28)
+      minitest (~> 5.11)
+      mutant (= 0.11.28)
     net-imap (0.4.10)
       date
       net-protocol
@@ -208,7 +223,7 @@ GEM
     rake (13.1.0)
     rdoc (6.6.2)
       psych (>= 4.0.0)
-    regexp_parser (2.9.0)
+    regexp_parser (2.8.3)
     reline (0.4.2)
       io-console (~> 0.5)
     rexml (3.2.6)
@@ -249,6 +264,7 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
+    sorbet-runtime (0.5.11247)
     sprockets (4.2.1)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -265,6 +281,18 @@ GEM
     stimulus-rails (1.3.3)
       railties (>= 6.0.0)
     stringio (3.1.0)
+    tailwindcss-rails (2.3.0)
+      railties (>= 6.0.0)
+    tailwindcss-rails (2.3.0-aarch64-linux)
+      railties (>= 6.0.0)
+    tailwindcss-rails (2.3.0-arm-linux)
+      railties (>= 6.0.0)
+    tailwindcss-rails (2.3.0-arm64-darwin)
+      railties (>= 6.0.0)
+    tailwindcss-rails (2.3.0-x86_64-darwin)
+      railties (>= 6.0.0)
+    tailwindcss-rails (2.3.0-x86_64-linux)
+      railties (>= 6.0.0)
     thor (1.3.0)
     timeout (0.4.1)
     turbo-rails (2.0.2)
@@ -274,6 +302,9 @@ GEM
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.5.0)
+    unparser (0.6.13)
+      diff-lcs (~> 1.3)
+      parser (>= 3.3.0)
     useragent (0.16.10)
     web-console (4.2.1)
       actionview (>= 6.0.0)
@@ -304,6 +335,9 @@ DEPENDENCIES
   debug
   importmap-rails
   jbuilder
+  mutant (= 0.11.28)
+  mutant-license!
+  mutant-minitest
   puma (>= 5.0)
   rails!
   rubocop-rails-omakase
@@ -311,6 +345,7 @@ DEPENDENCIES
   sprockets-rails
   sqlite3 (~> 1.4)
   stimulus-rails
+  tailwindcss-rails (~> 2.3)
   turbo-rails
   tzinfo-data
   web-console

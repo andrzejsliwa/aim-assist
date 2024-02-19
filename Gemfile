@@ -70,4 +70,10 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
   gem "selenium-webdriver"
+
+  gem "mutant-minitest"
+  gem "mutant", "0.11.28"
+  gem "mutant-license", source: "https://oss:d9teyzZr0ggvzbc3qJZJtjFWGJ4af3rQ@gem.mutant.dev"
 end
+
+gem "tailwindcss-rails", "~> 2.3"
