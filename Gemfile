@@ -72,7 +72,7 @@ group :test do
   gem "selenium-webdriver"
 
   gem "mutant-minitest"
-  gem "mutant", "0.11.28"
+  gem "mutant", "0.11.32"
   gem "mutant-license", source: "https://oss:d9teyzZr0ggvzbc3qJZJtjFWGJ4af3rQ@gem.mutant.dev"
 end
 
