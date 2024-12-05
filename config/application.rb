@@ -37,6 +37,13 @@ module AimAssist
     # config.eager_load_paths << Rails.root.join("extras")
 
     # Don't generate system test files.
-    config.generators.system_tests = nil
+    config.generators do |generate|
+      generate.test_framework :rspec, fixtures: false
+      generate.view_specs false
+      generate.integration_tool :rspec
+      generate.system_tests nil
+      generate.hidden_namespaces << :test_unit << :erb
+      generate.template_enine :slim
+    end
   end
 end

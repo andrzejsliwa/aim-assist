@@ -53,6 +53,10 @@ group :development, :test do
   gem "rubocop-rails-omakase", require: false
   gem "mutant", "0.11.28"
   gem "mutant-license", source: "https://oss:d9teyzZr0ggvzbc3qJZJtjFWGJ4af3rQ@gem.mutant.dev"
+  gem "rspec-rails", "~> 7.0.0"
+  gem "factory_bot_rails"
+  gem "slim-rails"
+  gem "retest"
 end
 
 group :development do
