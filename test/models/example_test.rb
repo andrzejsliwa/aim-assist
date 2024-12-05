@@ -1,4 +1,4 @@
-require "minitest/autorun"
+require "test_helper"
 
 class ExampleTest < Minitest::Test
   def test_this_passes
