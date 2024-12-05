@@ -4,3 +4,7 @@
 require_relative "config/application"
 
 Rails.application.load_tasks
+
+task :mutate do
+  sh "RAILS_ENV=test bundle exec mutant run"
+end

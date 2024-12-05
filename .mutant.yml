@@ -1,0 +1,12 @@
+---
+integration:
+  name: minitest
+includes:
+  - lib
+  - test
+requires:
+  - ./config/environment
+matcher:
+  subjects:
+    - Example
+    - "source: ./lib/**/*.rb"

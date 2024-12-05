@@ -130,6 +130,15 @@ GEM
     erubi (1.13.0)
     et-orbi (1.2.11)
       tzinfo
+    ffi (1.17.0-aarch64-linux-gnu)
+    ffi (1.17.0-aarch64-linux-musl)
+    ffi (1.17.0-arm-linux-gnu)
+    ffi (1.17.0-arm-linux-musl)
+    ffi (1.17.0-arm64-darwin)
+    ffi (1.17.0-x86-linux-gnu)
+    ffi (1.17.0-x86-linux-musl)
+    ffi (1.17.0-x86_64-darwin)
+    ffi (1.17.0-x86_64-linux-musl)
     fugit (1.11.1)
       et-orbi (~> 1, >= 1.2.11)
       raabro (~> 1.4)
@@ -190,6 +199,9 @@ GEM
       regexp_parser (~> 2.8.2)
       sorbet-runtime (~> 0.5.0)
       unparser (~> 0.6.9)
+    mutant-minitest (0.11.28)
+      minitest (~> 5.11)
+      mutant (= 0.11.28)
     net-imap (0.5.1)
       date
       net-protocol
@@ -402,6 +414,7 @@ DEPENDENCIES
   minitest-reporters
   mutant (= 0.11.28)
   mutant-license!
+  mutant-minitest
   nice_partials
   propshaft
   puma (>= 5.0)

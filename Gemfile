@@ -54,6 +54,7 @@ group :development, :test do
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
   gem "mutant", "0.11.28"
+  gem "mutant-minitest"
   gem "mutant-license", source: "https://oss:d9teyzZr0ggvzbc3qJZJtjFWGJ4af3rQ@gem.mutant.dev"
   gem "minitest-reporters"
 end
