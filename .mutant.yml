@@ -9,4 +9,4 @@ requires:
 matcher:
   subjects:
     - Example
-    - "source: ./lib/**/*.rb"
+    - source:app/models/*.rb
