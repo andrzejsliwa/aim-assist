@@ -148,7 +148,7 @@ GEM
       actioncable (>= 6.0.0)
       listen (>= 3.0.0)
       railties (>= 6.0.0)
-    hotwire_native_rails (0.3.2)
+    hotwire_native_rails (0.4.1)
     i18n (1.14.6)
       concurrent-ruby (~> 1.0)
     importmap-rails (2.0.3)
@@ -407,7 +407,7 @@ DEPENDENCIES
   brakeman
   debug
   hotwire-livereload
-  hotwire_native_rails (~> 0.3.2)
+  hotwire_native_rails (~> 0.4.1)
   importmap-rails
   jbuilder
   kamal

@@ -66,4 +66,4 @@ group :development do
   gem "hotwire-livereload"
 end
 
-gem "hotwire_native_rails", "~> 0.3.2"
+gem "hotwire_native_rails", "~> 0.4.1"
